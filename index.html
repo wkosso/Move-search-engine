@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>My Movie App</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="nav-bar">
+		<div class="app-title">My Movie App</div>
+		<div class="buttons">
+      <button onclick="sortBy2000()">2001-2020 movies</button>
+			<button onclick="sortByYear()">By Year</button>
+			<button onclick="sortByRating()">By Rating</button>
+			<input id="search" onkeyup="searchOverview(this.value)" placeholder="Search Overview">
+		</div>
+	</div>
+
+	<div id="results" class="grid-container">
+		<!--Javascript will insert content here...  -->
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
